@@ -2,11 +2,10 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: guestbook
-  namespace: guestbook
 spec:
   port:
     targetPort: 80
   to:
     kind: Service
-    name: frontend
+    name: guestbook
     weight: 100
