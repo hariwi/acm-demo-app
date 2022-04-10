@@ -3,9 +3,9 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   namespace: guestbook
-  name: redis-master-app-placement-1
+  name: redis-leader-app-placement-1
   labels:
-    app: redis-master-app
+    app: redis-leader-app
 spec:
   clusterSelector:
     matchLabels:
