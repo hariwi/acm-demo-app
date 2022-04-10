@@ -24,5 +24,10 @@ spec:
           requests:
             cpu: 100m
             memory: 100Mi
+        env:
+        - name: GET_HOSTS_FROM
+          value: env
+        - name: REDIS_FOLLOWER_SERVICE_HOST
+          value: redis-follower.guestbook.svc.clusterset.local     
         ports:
         - containerPort: 6379
